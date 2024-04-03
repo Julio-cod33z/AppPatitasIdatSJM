@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/ivMascota"
             android:layout_width="92dp"
             android:layout_height="100dp"
@@ -18,7 +18,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/baseline_pets_24" />
+            tools:src="@drawable/baseline_pets_24" />
 
         <TextView
             android:id="@+id/tvNomMascota"
