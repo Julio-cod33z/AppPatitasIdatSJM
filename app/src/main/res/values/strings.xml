@@ -15,4 +15,21 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_mascota">Mascotas Perdidas</string>
     <string name="menu_voluntario">Voluntario</string>
+    <string name="valetusuario">Usuario</string>
+    <string name="valetcontraseña">Contraseña</string>
+    <string name="valcbrecordar">¿Recordar Usuario?</string>
+    <string name="valbtningresar">INGRESAR</string>
+    <string name="valbtnregistrar">CREA TU CUENTA AQUÍ</string>
+    <string name="valetnombrereg">Nombres</string>
+    <string name="valetapellidosreg">Apellidos</string>
+    <string name="valetusuarioreg">Usuario</string>
+    <string name="valetemailreg">Email</string>
+    <string name="valetcelularreg">Celular</string>
+    <string name="valetguardarusu">REGISTRAR USUARIO</string>
+    <string name="valbtnirlogin">IR A LOGIN</string>
+    <string name="tituloregistro">REGISTRO DE USUARIO</string>
+    <string name="titulovoluntario">¡ÚNETE A NOSOTROS!</string>
+    <string name="valetterminos">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="valbtnregvoluntario">ÚNETE</string>
+    <string name="valcbaceptarterminos">Aceptar los términos y condiciones</string>
 </resources>
