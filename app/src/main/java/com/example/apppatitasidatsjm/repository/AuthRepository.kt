@@ -23,7 +23,6 @@ class AuthRepository {
             override fun onResponse(p0: Call<LoginResponse>, p1: Response<LoginResponse>) {
                 loginResponse.value = p1.body()
             }
-
             override fun onFailure(p0: Call<LoginResponse>, p1: Throwable) {
                 Log.e( "ErrorLogin", p1.message.toString())
             }
@@ -38,7 +37,6 @@ class AuthRepository {
             override fun onResponse(p0: Call<RegistroResponse>, p1: Response<RegistroResponse>) {
                 registroResponse.value = p1.body()
             }
-
             override fun onFailure(p0: Call<RegistroResponse>, p1: Throwable) {
                 Log.e( "ErrorRegistro", p1.message.toString())
             }

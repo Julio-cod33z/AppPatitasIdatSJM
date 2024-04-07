@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         authViewModel.loginResponse.observe(this, Observer {
             response -> obtenerDatosLogin(response!!)
         })
+        binding.btnIngresar.setOnClickListener(this)
+        binding.btnRegistrar.setOnClickListener(this)
+
     }
 
     private fun obtenerDatosLogin(response: LoginResponse) {
