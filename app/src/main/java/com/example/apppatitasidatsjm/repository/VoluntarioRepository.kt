@@ -9,7 +9,6 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-
 class VoluntarioRepository {
 
     var registroResponse = MutableLiveData<RegistroResponse>()

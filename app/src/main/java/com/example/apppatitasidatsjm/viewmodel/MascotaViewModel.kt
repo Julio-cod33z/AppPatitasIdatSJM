@@ -2,15 +2,14 @@ package com.example.apppatitasidatsjm.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.example.apppatitasidatsjm.repository.VoluntarioRepository
-import com.example.apppatitasidatsjm.retrofit.response.RegistroResponse
+import com.example.apppatitasidatsjm.repository.MascotaRepository
+import com.example.apppatitasidatsjm.retrofit.response.MascotaResponse
 
 class MascotaViewModel: ViewModel() {
 
-    private var repository = VoluntarioRepository()
-    var registroResponse: LiveData<RegistroResponse> = repository.registroResponse
+    private var repository = MascotaRepository()
 
-    fun registrarVoluntario(idPersona: Int) {
-        registroResponse = repository.registrarVoluntario(idPersona)
+    fun listarMascota(): LiveData<List<MascotaResponse>> {
+        return repository.listarMascotas()
     }
 }
