@@ -25,7 +25,7 @@ class SharedPreferencesManager() {
         editor.commit()
     }
 
-    fun setSomeStringValue(nombre: String): String {
+    fun getSomeStringValue(nombre: String): String {
         return getSharedPreferences().getString(nombre, "").toString()
     }
 }
