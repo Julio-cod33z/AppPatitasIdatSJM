@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     personaViewModel.eliminar()
                     binding.etUsuario.isEnabled = true
                     binding.etPassword.isEnabled = true
-                    binding.cbRecordar.text = getString(R.string.valcbaceptarterminos)
+                    binding.cbRecordar.text = getString(R.string.valcbrecordar)
                 }
             }
         }
