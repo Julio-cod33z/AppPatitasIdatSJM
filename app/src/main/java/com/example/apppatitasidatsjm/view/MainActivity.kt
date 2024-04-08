@@ -3,6 +3,7 @@ package com.example.apppatitasidatsjm.view
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.CheckBox
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -47,6 +48,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
         binding.btnIngresar.setOnClickListener(this)
         binding.btnRegistrar.setOnClickListener(this)
+        binding.cbRecordar.setOnClickListener(this)
     }
 
     private fun obtenerDatosLogin(response: LoginResponse) {
@@ -78,6 +80,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnIngresar -> autenticarUsuario()
             R.id.btnRegistrar -> startActivity(Intent(applicationContext,
                 RegistroActivity::class.java))
+            R.id.cbRecordar -> setearValoresRecordar(vista)
+        }
+    }
+
+    private fun setearValoresRecordar(vista: View) {
+        if(vista is CheckBox) {
+            val checkeo = vista.isChecked
+            if(!checkeo) {
+                if(recordarDatosLogin()) {
+                    SharedPreferencesManager().deletePreferences("PREF_RECORDAR")
+                    personaViewModel.eliminar()
+                    binding.etUsuario.isEnabled = true
+                    binding.etPassword.isEnabled = true
+                    binding.cbRecordar.text = getString(R.string.valcbaceptarterminos)
+                }
+            }
         }
     }
 
